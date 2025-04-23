@@ -1,0 +1,21 @@
+1) Create Repo on Github
+2) Clone it on your local system
+3) open cloned repository in VS code
+4) Create src Folder
+	- Create Utils
+		- Utils
+		- Exception
+	- Create TrainingPipeline Folder
+		1) Data ingestion
+		2) Data Cleaning(Eda)
+		3) Outlier removal
+		4) Encoding and scalling
+		5) Model Training
+		6) Register Model
+		7) stage transition
+5) DVC pipeline
+
+6) DVC data Versioning
+	
+7) Docker
+8) CICD Pipeline

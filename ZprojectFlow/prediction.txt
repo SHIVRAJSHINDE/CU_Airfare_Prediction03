@@ -1,0 +1,10 @@
+pip install pipreqs
+
+pipreqs . --force
+
+
+token 
+
+ffdabd8810a1c3780b61b24dbcc31933b012dc17
+
+docker run -p 8080:5000 -e DAGSHUB_PAT =ffdabd8810a1c3780b61b24dbcc31933b012dc17 shivrajshinde/xx:latest

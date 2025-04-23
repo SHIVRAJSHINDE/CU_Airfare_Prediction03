@@ -1,0 +1,25 @@
+airlineQuartile :
+  IndiGo : [0.20, 0.80]
+  Air India: [0.27, 0.75]
+  Jet Airways: [0.27, 0.75]
+  SpiceJet: [0.20, 0.45]
+  Multiple carriers: [0.20, 0.80]
+  GoAir: [0.20, 0.75]
+  Vistara: [0.20, 0.80]
+  Air Asia: [0.25, 0.80]
+  Trujet: [0.00, 0.00] 
+
+
+
+
+
+trainTestSplit:
+  testSize: 0.25
+  randomState: 42
+  CrossValidation: 5
+
+
+scaling:
+  #scalingFeature: 'sklearn.preprocessing.StandardScaler'   
+  scalingFeature: 'sklearn.preprocessing.MinMaxScaler'   
+  
