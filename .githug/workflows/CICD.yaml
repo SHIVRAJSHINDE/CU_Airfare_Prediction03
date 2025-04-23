@@ -1,0 +1,15 @@
+name: CICD Pipeline
+
+on: 
+  push:
+    branches:
+      - main  # Optionally specify the branch that triggers the pipeline.
+
+jobs:
+  CICD_Pipeline_Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        # upload code on github
+        uses: actions/checkout@v3

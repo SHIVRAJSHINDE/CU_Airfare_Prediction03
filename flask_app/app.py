@@ -5,10 +5,10 @@ import pickle
 import pandas as pd  # Importing pandas for DataFrame handling
 from flask import Flask, request, render_template
 
-
 from flask import Flask, request, render_template
 from flask_cors import cross_origin
 import os
+
 
 import dagshub
 
@@ -23,8 +23,8 @@ os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
 
 mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction02.mlflow")
 
-# mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction02.mlflow")
-# dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction02', mlflow=True)
+#mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction03.mlflow")
+#dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction03', mlflow=True)
 
 # tracking_uri = "http://localhost:5000"
 # mlflow.set_tracking_uri(tracking_uri)

@@ -26,8 +26,8 @@ class ModelManagerRegister:
         # mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/AirlineFare_EndToEnd.mlflow")        
 
 
-        mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction02.mlflow")
-        dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction02', mlflow=True)
+        mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction03.mlflow")
+        dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction03', mlflow=True)
         
         # self.tracking_uri = "http://localhost:5000"
         # mlflow.set_tracking_uri(self.tracking_uri)

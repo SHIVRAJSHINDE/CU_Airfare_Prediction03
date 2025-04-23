@@ -82,8 +82,8 @@ class ModelManager:
 
 
 if __name__ == '__main__':
-    mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction02.mlflow")
-    dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction02', mlflow=True)
+    mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction03.mlflow")
+    dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction03', mlflow=True)
 
     model_name="Lasso"
     info_path='reports/experiment_info.json'

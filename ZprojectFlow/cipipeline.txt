@@ -1,0 +1,42 @@
+name: CICD Pipeline
+
+on: 
+  push:
+    branches:
+      - main  # Optionally specify the branch that triggers the pipeline.
+
+jobs:
+  CICD_Pipeline_Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        # upload code on github
+        uses: actions/checkout@v3
+    
+      - name: Set up Python environment
+        uses: actions/setup-python@v2
+        with: 
+          python-version: '3.11.7'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install dvc mlflow  # Install DVC and MLflow explicitly if not in requirements.txt
+
+
+      - name: Run DVC pipeline
+        env:
+          DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
+        run: dvc repro  # Ensure DVC is initialized and the pipeline is configured correctly.
+
+      - name: Run Flask app tests
+        if: success()
+        env:
+          DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
+        run: python -m unittest tests/test_flask_app.py
+
+
+
+
+

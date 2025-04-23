@@ -5,4 +5,5 @@ pyyaml
 scikit-learn
 mlflow
 dagshub
+flask_cors==5.0.1
 -e .
