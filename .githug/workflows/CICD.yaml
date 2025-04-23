@@ -8,6 +8,7 @@ on:
 jobs:
   CICD_Pipeline_Test:
     runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Check out code
