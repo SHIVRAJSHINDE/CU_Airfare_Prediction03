@@ -1,16 +1,16 @@
-name: CICD Pipeline
+name: CI Pipeline
 
-on: 
-  push:
-    branches:
-      - main  # Optionally specify the branch that triggers the pipeline.
+on: push
 
 jobs:
-  CICD_Pipeline_Test:
+  project-testing:
     runs-on: ubuntu-latest
-    runs-on: windows-latest
 
     steps:
-      - name: Check out code
-        # upload code on github
+      - name: checkout code
         uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
