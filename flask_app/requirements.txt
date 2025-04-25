@@ -5,4 +5,5 @@ mlflow==2.21.3
 mlflow_skinny==2.21.3
 numpy==2.2.4
 pandas==2.2.3
+pathlib
 gunicorn
