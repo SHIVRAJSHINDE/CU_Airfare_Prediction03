@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # print(source_path)
 
     # OriginalDir = "./OriginalFolder/"
-    OriginalDir = "/OriginalFolder/"
+    OriginalDir = "OriginalFolder/"
    
     OriginalFile = "Airline.csv"
     # source_path = "D:\\DataSets\\01_AirlineData\\Airline.csv"  # Use Pathlib to build the path
