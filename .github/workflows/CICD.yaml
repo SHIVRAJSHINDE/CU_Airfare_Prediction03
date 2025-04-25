@@ -20,6 +20,8 @@ jobs:
           pip install -r requirements.txt
           pip install dvc mlflow  # Install DVC and MLflow explicitly if not in requirements.txt
 
-
+      - name: Run DVC-Repro
+        run: | 
+          dvc repro
 
           
